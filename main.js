@@ -18,10 +18,27 @@ const estudiantes = [
   { nombre: "Diego Vargas", edad: 23, pais: "Uruguay", notas: [75, 70, 72] },
   { nombre: "Isabella León", edad: 19, pais: "Ecuador", notas: [92, 94, 90] },
   { nombre: "Mateo Castillo", edad: 21, pais: "Venezuela", notas: [65, 60, 68] },
-  { nombre: "Gabriela Soto", edad: 22, pais: "Paraguay", notas: [99, 97, 100] }
+  { nombre: "Gabriela Soto", edad: 22, pais: "Paraguay", notas: [99, 97, 100] },
 ];
-
 
 // MOSTRAR : TODOS LO ESTUDIANTES, SOLO LOS ESTUDIANTES CON PROMEDIO MAYOR A 51, ESTUDIANTES
 // CON PROMEDIO MENOR A 51,
 // ESTUDIANTES SOLO DE MEXICO, EL PAIS CON MAS ESTUDIANTES Y EL NUMERO DE ESTUDIANTES Q TIENE
+
+let tbody = document.querySelector("#tabla-body");
+let filas = "";
+
+for (let i = 0; i < estudiantes.length; i++) {
+  filas += `
+    <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-100">
+      <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-black">
+        ${estudiantes[i].nombre}
+      </th>
+      <td class="px-6 py-4">${estudiantes[i].edad}</td>
+      <td class="px-6 py-4">${estudiantes[i].pais}</td>
+      <td class="px-6 py-4">${estudiantes[i].notas.join(", ")}</td>
+    </tr>
+  `;
+}
+
+tbody.innerHTML = filas;
