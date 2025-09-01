@@ -18,10 +18,41 @@ const estudiantes = [
   { nombre: "Diego Vargas", edad: 23, pais: "Uruguay", notas: [75, 70, 72] },
   { nombre: "Isabella León", edad: 19, pais: "Ecuador", notas: [92, 94, 90] },
   { nombre: "Mateo Castillo", edad: 21, pais: "Venezuela", notas: [65, 60, 68] },
-  { nombre: "Gabriela Soto", edad: 22, pais: "Paraguay", notas: [99, 97, 100] }
+  { nombre: "Gabriela Soto", edad: 22, pais: "Paraguay", notas: [99, 97, 100] },
 ];
 
 
 // MOSTRAR : TODOS LO ESTUDIANTES, SOLO LOS ESTUDIANTES CON PROMEDIO MAYOR A 51, ESTUDIANTES
 // CON PROMEDIO MENOR A 51,
 // ESTUDIANTES SOLO DE MEXICO, EL PAIS CON MAS ESTUDIANTES Y EL NUMERO DE ESTUDIANTES Q TIENE
+
+function promedio(arrayPro) {
+  let prom = 0;
+  for (let i = 0; i < arrayPro.length; i++) {
+    prom += arrayPro[i]
+  }
+  return prom / arrayPro.length
+}
+
+estudiantes.forEach(alumno => {
+    const prom = promedio(alumno.notas)
+    if(prom>51){
+        console.log(alumno.nombre,prom,"APROBÓ")
+    }
+})
+
+estudiantes.forEach(alumno => {
+    const prom = promedio(alumno.notas)
+    if(prom<51){
+        console.log(alumno.nombre,prom,"REPROBÓ")
+    }
+})
+
+
+// creacion de un elemento
+
+let h1Nuevo = document.createElement("h1");
+h1Nuevo.textContent = "Titulo del Producto";
+divUno.prepend(h1Nuevo)
+
+console.log(nuevo);
