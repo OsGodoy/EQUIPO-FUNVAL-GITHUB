@@ -20,6 +20,7 @@ const estudiantes = [
   { nombre: "Mateo Castillo", edad: 21, pais: "Venezuela", notas: [65, 60, 68] },
   { nombre: "Gabriela Soto", edad: 22, pais: "Paraguay", notas: [99, 97, 100] }
 ];
+let paisMasEstudiantes = {};
 
 
 // MOSTRAR : TODOS LO ESTUDIANTES, SOLO LOS ESTUDIANTES CON PROMEDIO MAYOR A 51, ESTUDIANTES
