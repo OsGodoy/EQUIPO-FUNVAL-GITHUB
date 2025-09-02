@@ -8,20 +8,187 @@
     <title>Document</title>
 
   </head>
-  <body class="flex gap-2 items-center justify-center">
-    <div id="contenedor">
-      <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400 border">
+  <body class="h-screen w-screen flex flex-col items-center justify-center">
+    <header class="bg-amber-200 h-[10%] w-full flex items-center justify-evenly">
+      <div class="bg-red-400 w-50 h-50">
+        <img class="" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyK1XvWE2WeDczhjH9zb6FPq95eyxB3SUA-A&s" alt="">
+      </div>
+      <div>
+        <button class="bg-blue-300 w-20 h-20 rounded-full">añadir</button>
+      </div>
+    </header>
+    <main class="bg-amber-300 h-[80%] w-full flex flex-col items-center justify-center">
+      <div class="TABLA">
+<div class="relative overflow-x-auto shadow-md sm:rounded-lg">
+    <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
         <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
-          <tr>
-            <th scope="col" class="px-6 py-3">Nombre</th>
-            <th scope="col" class="px-6 py-3">Edad</th>
-            <th scope="col" class="px-6 py-3">País</th>
-            <th scope="col" class="px-6 py-3">Notas</th>
-          </tr>
+            <tr>
+                <th scope="col" class="p-4">
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    NOMBRE
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    EDAD
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    PAIS
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    NOTAS
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    PROMEDIO
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    ACCIONES
+                </th>
+            </tr>
         </thead>
-        <tbody id="tabla-body"></tbody>
-      </table>
-    </div>
+        <tbody>
+            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600">
+                <td class="w-4 p-4">
+                </td>
+                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                    PEPITO
+                </th>
+                <td class="px-6 py-4">
+                    20
+                </td>
+                <td class="px-6 py-4">
+                    ARGENTINA
+                </td>
+                <td class="px-5 py-4">
+                    [10 50 10 50 10]
+                </td>
+                <td class="px-6 py-4">
+                    FLOAT
+                </td>
+                <td class="flex items-center px-6 py-4">
+                    <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+                    <a href="#" class="font-medium text-red-600 dark:text-red-500 hover:underline ms-3">Remove</a>
+                </td>
+            </tr>
+            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600">
+                <td class="w-4 p-4">
+                </td>
+                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                    PEPITO
+                </th>
+                <td class="px-6 py-4">
+                    20
+                </td>
+                <td class="px-6 py-4">
+                    ARGENTINA
+                </td>
+                <td class="px-5 py-4">
+                    [10 50 10 50 10]
+                </td>
+                <td class="px-6 py-4">
+                    FLOAT
+                </td>
+                <td class="flex items-center px-6 py-4">
+                    <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+                    <a href="#" class="font-medium text-red-600 dark:text-red-500 hover:underline ms-3">Remove</a>
+                </td>
+            </tr>
+            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600">
+                <td class="w-4 p-4">
+                </td>
+                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                    PEPITO
+                </th>
+                <td class="px-6 py-4">
+                    20
+                </td>
+                <td class="px-6 py-4">
+                    ARGENTINA
+                </td>
+                <td class="px-5 py-4">
+                    [10 50 10 50 10]
+                </td>
+                <td class="px-6 py-4">
+                    FLOAT
+                </td>
+                <td class="flex items-center px-6 py-4">
+                    <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+                    <a href="#" class="font-medium text-red-600 dark:text-red-500 hover:underline ms-3">Remove</a>
+                </td>
+            </tr>
+            <tr id="tablaPapa" class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600">
+                <td class="w-4 p-4">
+                </td>
+                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                    
+                </th>
+                <td class="px-6 py-4">
+                    
+                </td>
+                <td class="px-6 py-4">
+                    
+                </td>
+                <td class="px-5 py-4">
+                    
+                </td>
+                <td class="px-6 py-4">
+                    
+                </td>
+                <td class="flex items-center px-6 py-4">
+                    <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+                    <a href="#" class="font-medium text-red-600 dark:text-red-500 hover:underline ms-3">Remove</a>
+                </td>
+            </tr>
+            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600">
+                <td class="w-4 p-4">
+                </td>
+                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                    
+                </th>
+                <td class="px-6 py-4">
+                    
+                </td>
+                <td class="px-6 py-4">
+                    
+                </td>
+                <td class="px-5 py-4">
+                    
+                </td>
+                <td class="px-6 py-4">
+                    
+                </td>
+                <td class="flex items-center px-6 py-4">
+                    <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+                    <a href="#" class="font-medium text-red-600 dark:text-red-500 hover:underline ms-3">Remove</a>
+                </td>
+            </tr>
+            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600">
+                <td class="w-4 p-4">
+                </td>
+                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                    
+                </th>
+                <td class="px-6 py-4">
+                    
+                </td>
+                <td class="px-6 py-4">
+                    
+                </td>
+                <td class="px-5 py-4">
+                    
+                </td>
+                <td class="px-6 py-4">
+                    
+                </td>
+                <td class="flex items-center px-6 py-4">
+                    <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+                    <a href="#" class="font-medium text-red-600 dark:text-red-500 hover:underline ms-3">Remove</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+      </div>
+    </main>
+    <footer class="bg-amber-600 h-[10%] w-full"></footer>
   </body>
 </html>
-
